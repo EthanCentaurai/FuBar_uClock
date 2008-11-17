@@ -1,6 +1,5 @@
---[[ $Id: Core.lua 11 2008-11-01 16:26:35Z DarkImakuni-16655 $ ]]--
+
 uClock = AceLibrary("AceAddon-2.0"):new("AceDB-2.0", "AceEvent-2.0", "FuBarPlugin-2.0")
-uClock.date = ("$Date: 2008-11-01 16:26:35 +0000 (Sat, 01 Nov 2008) $"):match("%d%d%d%d%-%d%d%-%d%d")
 uClock.hasIcon = "Interface\\Icons\\INV_Misc_PocketWatch_02"
 uClock.blizzardTooltip = true
 uClock.cannotHideText = true
@@ -84,3 +83,4 @@ function uClock:GetTimeString(hour, minute, color)
 	if color then return "|cffffffff"..time.."|r"
 	else return time end
 end
+
