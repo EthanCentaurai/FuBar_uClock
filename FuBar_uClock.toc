@@ -2,7 +2,7 @@
 ## Title: FuBar - |cff00ff00u|cffffffffClock|r
 ## Notes: Time/date display for FuBar.
 ## Author: Ethan Centaurai
-## Version: 2.0.13
+## Version: 2.1
 ## SavedVariables: uClockDB
 ## OptionalDeps: Ace2, FuBar
 
