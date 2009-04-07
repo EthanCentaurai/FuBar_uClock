@@ -13,7 +13,7 @@ uClock:RegisterDefaults('profile', { showLocal = true, showRealm = false, twenty
 function uClock:OnEnable()
 	db = self.db.profile
 
-	self:ScheduleRepeatingEvent(self.UpdateDisplay, 1, self)
+	self:ScheduleRepeatingEvent(self.UpdateTimeStrings, 1, self)
 	self.OnMenuRequest = {
 		type = 'group',
 		args = {
@@ -57,9 +57,6 @@ function uClock:OnEnable()
 	}
 end
 
-function uClock:OnTextUpdate()
-	self:SetText(("|cff%02x%02x%02x%s|r"):format(db.r*255, db.g*255, db.b*255, displayedTime))
-end
 
 function uClock:OnTooltipUpdate()
 	GameTooltip:AddDoubleLine("Today's Date", date("%A, %B %d, %Y"))
@@ -117,4 +114,6 @@ function uClock:UpdateTimeStrings()
 	elseif db.showLocal then displayedTime = localTime
 	elseif db.showRealm then displayedTime = realmTime
 	else displayedTime = "" end
+
+	self:SetText(("|cff%02x%02x%02x%s|r"):format(db.r*255, db.g*255, db.b*255, displayedTime))
 end
