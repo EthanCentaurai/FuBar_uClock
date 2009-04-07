@@ -51,7 +51,7 @@ function uClock:OnEnable()
 				desc = "Choose the colour of the text.",
 				type = "color", order = 6,
 				get = function() return db.r, db.g, db.b end,
-				set = function(r, g, b) db.r = r, db.b = b, db.g = g self:UpdateTimeStrings() end,
+				set = function(r, g, b) db.r, db.g, db.b = r, g, b self:UpdateTimeStrings() end,
 			},
 		},
 	}
