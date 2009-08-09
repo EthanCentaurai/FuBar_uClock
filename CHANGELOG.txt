@@ -1,5 +1,9 @@
-Version 3.0
-- Updated for WoW 3.1.0
+Version 2.1.1
+- Updated for WoW 3.2.0.
+- Fixed compatibility issue with GroupCalendar v5.
+
+Version 2.1.0
+- Updated for WoW 3.1.0.
 - Added an option to show local time, realm time, or both in the display.
 - You should now be able to choose the colour of the text displayed in FuBar (default is white, text in the tooltip remains yellow).
 - Restructured the tooltip slightly. Today's date is now shown at the top, with local and server times underneath.
@@ -19,7 +23,7 @@ Version 2.0.8
 - Having the "Show Coloured Text" option enabled should now make the text white instead of FuBar's default yellow.
 
 Version 2.0.7
-- Updated .toc for Patch 3.0.2.
+- Updated for WoW 3.0.2.
 - Added Server Time display. Game Time can now be found in the tooltip.
 - Added options to show seconds and show 12hr format.
 - Shift-clicking the plugin will now toggle Blizzard's Calendar.
