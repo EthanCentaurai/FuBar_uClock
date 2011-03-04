@@ -1,3 +1,9 @@
+Version 2.1.4
+- Updated for WoW 4.0.6.
+
+Version 2.1.2
+- Added UTC time format support.
+
 Version 2.1.1
 - Updated for WoW 3.2.0.
 - Fixed compatibility issue with GroupCalendar v5.
